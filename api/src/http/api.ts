@@ -20,13 +20,9 @@ app.register(fastifyCors, {
 app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
 
-// Cria Metas
 app.register(createGoalRoute)
-// Completar metas
 app.register(createCompletionRoute)
-// Cria Metas Pendentes
 app.register(getPendingGoalsRoute)
-// 
 app.register(getWeekSummaryRoute)
 
 app
